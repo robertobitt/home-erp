@@ -18,6 +18,8 @@ public class BaseProduct {
     }
 
 
+
+
     public String getName() {
         return name;
     }
