@@ -8,7 +8,7 @@ public class Main {
         BaseProduct arroz = new BaseProduct("Arroz agulhinha","grãos","kg", 30, 5);
 
         // Leite: Giro interno de 10 dias | Alerta com 3 dias de antecedência
-        BaseProduct leite = new BaseProduct("Leite Integral","laticíneos","L", 30, 5);
+        BaseProduct leite = new BaseProduct("Leite Integral","laticíneos","L", 30, 5, 5.0,20.0);
 
         //Local dates of entered
         LocalDate dataDeEntrada = LocalDate.now();
@@ -37,7 +37,7 @@ public class Main {
         System.out.println("Simulando verificação no dia: " + dataSimuladaFuturo);
 
         boolean arrozPrecisaGiro = loteArroz.isEarlyWarningTrigged(dataSimuladaFuturo);
-        System.out.println("Arroz precisa de alerta de giro?" + (arrozPrecisaGiro ? "SIM - ⚠⚠ Consumir ou será descartado ⚠⚠" : "NãO✅"));
+        System.out.println("Arroz precisa de alerta de giro? " + (arrozPrecisaGiro ? "SIM - ⚠⚠ Consumir ou será descartado ⚠⚠" : "NãO✅"));
 
         }
 }

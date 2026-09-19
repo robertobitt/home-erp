@@ -8,17 +8,26 @@ public class BaseProduct {
     private String unitOfMeasure;
     private int internalRotationDays;
     private int earlyWarningDays;
+    // Using Double wrapper to allow null for unconfigured limits
+    private Double minQuantity;
+    private Double maxQuantity;
 
-    public BaseProduct(String name, String category, String unitOfMeasure, int internalRotationDays, int earlyWarningDays){
+
+
+    public BaseProduct(String name, String category, String unitOfMeasure, int internalRotationDays, int earlyWarningDays, Double minQuantity, Double maxQuantity){
         this.name = name;
         this.category = category;
         this.unitOfMeasure = unitOfMeasure;
         setInternalRotationDays(internalRotationDays);
         setEarlyWarningDays(earlyWarningDays);
+        this.minQuantity = minQuantity;
+        this.maxQuantity = maxQuantity;
     }
 
-
-
+    // Secondary constructor: defaults stock limits to null (no rule set)
+    public BaseProduct(String name, String category, String unitOfMeasure, int internalRotationDays, int earlyWarningDays) {
+        this(name, category, unitOfMeasure, internalRotationDays, earlyWarningDays, null, null);
+    }
 
     public String getName() {
         return name;
@@ -68,5 +77,19 @@ public class BaseProduct {
         }
     }
 
+    public double getMinQuantity() {
+        return minQuantity;
+    }
 
+    public void setMinQuantity(double minQuantity) {
+        this.minQuantity = minQuantity;
+    }
+
+    public double getMaxQuantity() {
+        return maxQuantity;
+    }
+
+    public void setMaxQuantity(double maxQuantity) {
+        this.maxQuantity = maxQuantity;
+    }
 }
