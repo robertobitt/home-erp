@@ -12,7 +12,7 @@ public class Pantry {
 
     public void addLot(InventoryItem item) {
         this.items.add(item);
-        System.out.println("Lote de " + item.getBaseProduct().getName() + " (" + item.getBrand() + "adicionado a despensa.");
+        System.out.println("Lote de " + item.getBaseProduct().getName() + " (" + item.getBrand() + ") " + "adicionado a despensa.");
 
     }
 
