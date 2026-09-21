@@ -36,6 +36,8 @@ public class Main {
         //Show detailed report by lot
         despensa.printStockByLot();
 
+        despensa.printGeneralStock();
+
         System.out.println("\n=== RELATÓRIO: ITENS EM ALERTA DE GIRO (PCP) ===");
         List<InventoryItem> itensEmAlerta = despensa.getWarningItems(dataDeEntrada);
 

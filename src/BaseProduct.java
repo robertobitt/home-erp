@@ -77,19 +77,19 @@ public class BaseProduct {
         }
     }
 
-    public double getMinQuantity() {
+    public Double getMinQuantity() {
         return minQuantity;
     }
 
-    public void setMinQuantity(double minQuantity) {
+    public void setMinQuantity(Double minQuantity) {
         this.minQuantity = minQuantity;
     }
 
-    public double getMaxQuantity() {
+    public Double getMaxQuantity() {
         return maxQuantity;
     }
 
-    public void setMaxQuantity(double maxQuantity) {
+    public void setMaxQuantity(Double maxQuantity) {
         this.maxQuantity = maxQuantity;
     }
 }
