@@ -26,7 +26,7 @@ public class BaseProduct {
 
     // Secondary constructor: defaults stock limits to null (no rule set)
     public BaseProduct(String name, String category, String unitOfMeasure, int internalRotationDays, int earlyWarningDays) {
-        this(name, category, unitOfMeasure, internalRotationDays, earlyWarningDays, null, null);
+         this(name, category, unitOfMeasure, internalRotationDays, earlyWarningDays, null, null);
     }
 
     public String getName() {
