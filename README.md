@@ -87,9 +87,9 @@ Roberto Bittencourt de Valem
 
 Desenvolvedor de Software | Back-End Java
 
-💼 LinkedIn: linkedin.com/in/roberto-bittencourt
+💼 LinkedIn: [linkedin.com/in/roberto-bittencourt](https://linkedin.com/in/roberto-bittencourt)
 
-🐙 GitHub: github.com/robertobitt
+🐙 GitHub: [github.com/robertobitt](https://github.com/robertobitt)
 
 ✉️ E-mail: robertobbtt@gmail.com
 
